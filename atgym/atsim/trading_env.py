@@ -206,6 +206,8 @@ class TradingEnv(Env):
         # shift down and fill next row with the new data
         self.state[:-1] = self.state[1:]
         self.state[-1] = new_day_data.to_numpy()
+        # normalize by first entry
+        self.state /= self.state[0, 0]
 
         # increment timestep
         self.timestep += 1
