@@ -28,5 +28,17 @@ setuptools.setup(
     install_requires=[
         "gym>=0.15.4",
         "numpy",
+        "yfinance",
+        "beautifulsoup4",
+        "gym",
+        "matplotlib",
+        "mplfinance",
+        "numpy",
+        "pandas",
+        "requests",
+        "scikit_learn",
+        "setuptools",
+        "stable_baselines3",
+        "yfinance"
     ],
 )
